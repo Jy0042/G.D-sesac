@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+}
+
+header {
+  height: 50px;
+  background-color: lightcoral;
+}
+
+nav {
+  height: 20px;
+  background: lavender;
+}
+
+main {
+  height: 1000px;
+  background-color: lightblue;
+  display: flex;
+}
+
+section {
+  width: 80%;
+  background-color: lemonchiffon;
+}
+
+article {
+  height: 100px;
+  background-color: lightgreen;
+}
+
+article:nth-child(2) {
+  background-color: lightsalmon;
+}
+
+article:nth-child(3) {
+  background-color: lightslategray;
+}
+
+article:nth-child(4) {
+  background-color: slateblue;
+}
+
+aside {
+  width: 20%;
+  background-color: crimson;
+}
+
+footer {
+  height: 50px;
+}
