@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1:hover {
+      color: red;
+    }
+    a:active {
+      background-color: blue;
+    }
+
+    input:focus {
+      background-color: orange;
+    }
+
+    .stripes div:nth-child(odd) {
+      background-color: lightseagreen;
+    }
+
+    .stripes div:nth-child(2n) {
+      background-color: lightpink;
+    }
+
+    .box::before {
+      content: "택시";
+    }
+
+    .box::after {
+      content: "빨리";
+    }
+  </style>
+</head>
+<body>
+  <h1>페이지로 이동</h1>
+  <a href="">a tag</a>
+  <input type="text">
+
+  <div class="stripes">
+    <div>navy</div>
+    <div>yellow</div>
+    <div>navy</div>
+    <div>yellow</div>
+    <div>navy</div>
+    <div>yellow</div>
+    <div>navy</div>
+    <div>yellow</div>
+    <div>navy</div>
+    <div>yellow</div>
+  </div>
+
+  <div class="box">여기요</div>
+</body>
+</html>

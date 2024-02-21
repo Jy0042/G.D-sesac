@@ -1,0 +1,131 @@
+.img_box {
+  background-color: darkorange;
+  width: 400px;
+  height: 250px;
+  /* perspective: 300px; */
+}
+
+.img_box > img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: 1px solid crimson;
+  /* transform-style: preserve-3d; */
+  transition: transform 0.5s;
+  perspective: 300px;
+
+}
+
+img:hover {
+  transform: skew(45deg, 10deg);
+  transform: scale(1.2, 0.8);
+  transform: translate(100px, 100px);
+  transform: perspective(500px), translateZ(100px);
+  transform: rotate(360deg);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.box1:hover {
+  background-color: lightcoral;
+  height: 120px;
+  width: 120px;
+  /* transition-property: scale;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  transition-delay: 1s; */
+
+  transition: width ease-in 0.5s;
+}
+
+.box2:hover {
+  background-color: aqua;
+  transform: translateX(200px) scaleX(2);
+}
+
+.box3:hover {
+  opacity: 0;
+}
+
+
+
+
+
+
+.img_box2 div img {
+  width: 300px;
+  height: 200px;
+}
+
+.img_box2 {
+  width: 100vw;
+  height: 400px;
+  background-color: lightblue;
+  position: relative;
+}
+
+.img_box2 div {
+  position: absolute;
+  transform: skewY(30deg);
+}
+
+.img_box2 div:nth-child(1) {
+  top: 100px;
+  left: 150px;
+  z-index: 3;
+}
+
+.img_box2 div:nth-child(2) {
+  top: 100px;
+  left: 300px;
+  z-index: 2;
+}
+
+.img_box2 div:nth-child(3) {
+  top: 100px;
+  left: 450px;
+  z-index: 1;
+}
+
+/* .img_box2 div img {
+  width: 50px;
+  height: 300px;
+  transform: skewX(-60deg);
+  transform: rotateY(-20deg);
+} */
+
+
+
+.case {
+  width: 100px;
+  height: 100px;
+  background-color: lawngreen;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.case1:hover {
+  width: 200px;
+}
+
+.case2:hover {
+  transform: skewX(-45deg) translateX(50%);
+}
+
+.case4:hover {
+  background-color: lightpink;
+  transform: rotateY(360deg) scale(2) perspective(200px) translateY(25px);
+}
+
+.case3:hover {
+  background-color: red;
+  border-radius: 50%;
+  transform: translateX(300px) rotate(360deg);
+}

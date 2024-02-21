@@ -1,0 +1,104 @@
+* {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+  margin-bottom: 60px;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #ddd;
+  padding: 0 20px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+
+/* TODO: header1 ~ 3까지 완성해주세요! */
+
+/* header1 */
+.header1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header1 > span {
+  flex-grow: 1;
+}
+
+.header1 > .menus{
+  display: flex;
+}
+
+.header1  .menus > li:nth-child(2) {
+  margin: 0 20px;
+}
+
+/* header2 */
+.header2 .menus {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header3 */
+.header3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header3 > ul {
+  display: flex;
+}
+
+.header3 ul > li {
+  margin: 0 20px;
+}
+
+/* header4 */
+.header4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.header4 > ul {
+  display: flex;
+  /* justify-content: flex-start; */
+}
+
+.header4 > ul li {
+  padding: 0 10px;
+
+}
+
+
+.header4 > div {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.header4 > div > span:nth-child(2) {
+  margin-left: 20px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .media {
+      background-color: pink;
+    }
+
+    .header-mobile {
+      display: none;
+    }
+
+    .img-container {
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .img-container img {
+      width: 20vw;
+    }
+
+    .box-wrap {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .nullbox {
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+      border-radius: 5px;
+      border: 1px solid crimson;
+      margin: 20px;
+    }
+
+    @media screen and (max-height: 300px) {
+      p {
+        font-style: italic;
+      }
+
+      p {
+        background-color: green;
+      }
+    }
+
+    @media screen and (min-width: 500px) {
+      body {
+        background-color: skyblue;
+      }
+    }
+
+    @media screen and (max-width: 300px) {
+      body {
+        background-color: orange;
+      }
+    }
+
+    @media screen and (max-width: 720px) {
+      .header-mobile {
+        display: block;
+      }
+
+      .header-web {
+        display: none;
+      }
+
+      .img-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box-wrap {
+        flex-direction: column;
+        align-items: center;
+        align-content: space-evenly;
+      }
+      .nullbox {
+        background-color: lightcoral;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .media {
+        background-color: lightcoral;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      .media {
+        background-color: lightgreen;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="media">mediaquery</div>
+  <hr />
+  <header class="header-web">web: header</header>
+  <header class="header-mobile">mobile: header</header>
+
+  <hr />
+  <section class="img-container">
+    <img src="img/pngegg (1).png" alt="">
+    <img src="img/pngegg (2).png" alt="">
+    <img src="./img/pngegg.png" alt="">
+    <img src="./pngwing.com.png" alt="">
+  </section>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, corrupti ad laborum minus quas corporis adipisci placeat ab? Quas qui aut magnam similique tempora laboriosam quidem provident molestiae facilis soluta?</p>
+  <hr />
+  
+  <section class="box-wrap">
+    <div class="nullbox"></div>
+    <div class="nullbox"></div>
+    <div class="nullbox"></div>
+  </section>
+</body>
+</html>
