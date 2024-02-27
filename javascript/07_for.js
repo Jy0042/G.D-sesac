@@ -94,3 +94,28 @@ for (let i = 2; i < 10; i++) {
     console.log(`${i} * ${j} = ${i * j}`);
   }
 }
+
+// 주어진 숫자들 중에서 짝수만 찾아 합을 구하는 문제
+
+// 주어진 숫자 배열
+const numbers = [3, 7, 2, 8, 5, 10, 6];
+
+// 짝수들의 합을 저장할 변수 초기화
+let evenSum = 0;
+
+// 주어진 배열에서 짝수를 찾아 합산
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 === 0) {
+    evenSum += numbers[i];
+  }
+}
+
+// 결과 출력
+console.log(`주어진 숫자 배열 [${numbers}] 중에서 짝수의 합은 ${evenSum}입니다.`);
+
+
+if (0===false) {
+  console.log("ok");
+} else {
+  console.log("no");
+}

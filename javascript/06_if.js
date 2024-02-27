@@ -127,22 +127,19 @@ function loginUser() {
   const inputId = prompt("아이디를 입력해주세요.");
   const inputPw = prompt("비밀번호를 입력해주세요.");
 
-  if (userId === inputId) {
-    if (userPw === inputPw) {
-      console.log("로그인 성공!");
-      alert(`안녕하세요, ${inputId}님`);
-    } else {
-      console.log("로그인 실패");
-      alert("비밀번호를 다시 입력해주세요.");
-    }
-  } else if (inputId === "") {
+  if (userId === inputId && userPw === inputPw) {
+    console.log("로그인 성공!");
+    alert(`안녕하세요, ${inputId}님`);
+  } else if (userId !== inputId) {
+    // console.log("로그인 실패");
     alert("아이디를 다시 입력해주세요.");
-  } else {
-    alert("아이디와 비번을 다시 입력해주세요.");
+  } else if (userPw !== inputPw) {
+    console.log("로그인 실패");
+    alert("비밀번호를 다시 입력해주세요.");
   }
 }
 
-// loginUser();
+  loginUser();
 
 
 // switch 문
