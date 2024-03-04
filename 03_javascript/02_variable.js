@@ -72,7 +72,7 @@ console.log(constName);
         : 이름을 지정할 때 사용하는 단어 (변수명, 함수명 등)
         - 키워드 사용 불가
             - 키워드 : 특별한 역할을 이미 하고 있는 단어
-            - ex : var, let, const, if, funtion, for, return, ...
+            - ex : var, let, const, if, function, for, return, ...
         - 숫자로 시작 불가
         - 특수문자는 _, $ 만 허용
         - 공백 문자 사용 불가
