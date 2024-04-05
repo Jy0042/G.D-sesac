@@ -1,6 +1,7 @@
 import './App.css';
 import ClassComponent from "./components/ClassComponent.js";
-import FunctionComponent from "./components/FunctionComponent.js";
+import FunctionComponent from "./components/FunctionComponent.jsx";
+import Prac from './components/Prac.jsx';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <ClassComponent />
       <FunctionComponent />
+      <Prac />
     </div>
   );
 }
