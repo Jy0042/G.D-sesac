@@ -3,7 +3,8 @@ import FuncProps from "./components/FuncProps";
 import ClassProps from "./components/ClassProps"
 import FoodProps from "./components/FoodProps";
 import FuncProps2 from "./components/FuncProps2";
-import ProductList from "./components/ProductList";
+import ProductContainer from "./components/ProductContainer";
+import ProductItem from "./components/ProductItem";
 
 
 function App() {
@@ -139,6 +140,14 @@ function App() {
         price={13500}
         type="자기개발서"
       />
+
+      {/* 연습 */}
+      {/* {products.map((prod) => (
+        <ProductItem prodData={prod} key={prod.id} />
+      ))} */}
+
+      {/* 연습 develop */}
+      <ProductContainer products={products} />
     </div>
   );
 }
