@@ -1,0 +1,64 @@
+$primary-color: #007bff;
+$title-color: rgb(255, 119, 29);
+
+.title {
+  color: $title-color;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.input-box {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: bisque;
+  margin-bottom: 50px;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-inline-start: 0;
+  width: 300px;
+}
+
+.list {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  height: 30px;
+  align-items: center;
+  font-weight: 700;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.buttons {
+  border-radius: 10px;
+  border: 0;
+  padding: 5px;
+  width: 70px;
+  background-color: $primary-color;
+  color: white;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  height: 30px;
+
+  &:hover {
+    background-color: darken($primary-color, 10%); // 호버 시 색상 어둡게 변환
+  }
+}
+
+.list-btn {
+  position: absolute;
+  right: 0;
+}

@@ -1,10 +1,10 @@
 import DoneList from "./DoneList";
-import TodoList from "./TodoList";
+import ToDoList from "./ToDoList";
 
 export default function ListContainer() {
   return (
     <>
-      <TodoList />
+      <ToDoList />
       <DoneList />
     </>
   );
