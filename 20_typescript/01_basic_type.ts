@@ -1,6 +1,6 @@
 let num: number = 1;
 // num = '1' -> error: number 타입으로 지정한 변수는 문자열로 작성 불가
-num =2;
+num = 2;
 console.log(num);
 
 let str: string = 'str';
@@ -37,3 +37,24 @@ let arr4: Array<boolean | null | number[]> = [true, null, false, [4, 22]];
 // 어떤 자료형이든 상관없이 들어갈 수 있는 배열
 let arrAny: any[] = [1, 2, 500, false, ['A', 'b', 3, false], null, undefined];
 
+// object
+let obj1: object = {
+  name: 'jy',
+  gender: 'man',
+}
+
+// -----------------------------------
+
+//타입 추론 (암묵적으로 타입 지정됨)
+let aa = 5;
+let bb = 'hi';
+let cc = true;
+let dd= null;
+let ee;
+
+//aa = '5'; // error (Type 'string' is not assignable to type 'number')
+//bb = 5;
+//cc = 5'
+//dd = 5;
+ee = 5; // 타입을 지정하지 않고 선언만 한 변수의 경우 any 타입이 자동 지정됨
+ee = 'abc'; // any 타입을 사용하게 되면 ts를 사용하는 이유 사라짐
